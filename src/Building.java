@@ -1,26 +1,19 @@
 public interface Building {
 
-    double surface(double buildingSurface, double yardArea, double parkingSurface);
+    double buildingSurface(double surface);
 
-    String adress(String locality, String street, String houseNumber, String apartmentNumber, String postcode);
+    String adress (String adress1);
 
-    void setWindowsCount(int windowsCount);
+    int windowsCount(int windows);
 
-    int getWindowsCount();
+     int citizenCount(int citizen);
 
-    void setCitizenCount(int citizenCount);
 
-    int getCitizenCount();
+     void houseColor(EnumColor color);
 
-    void setHouseColor(EnumColor color);
+     int roomsCount(int rooms, int bathrooms );
 
-    enum getHouseColor {}
 
-    double priceCalculate(double surface, double price);
-
-    int roomsCount(int bedrooms, int bathrooms);
-
-    void summary (int priceApartment);
 
 }
 

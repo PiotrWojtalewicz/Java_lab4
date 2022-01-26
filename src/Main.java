@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -32,7 +34,71 @@ public class Main {
         */
     }
 
+ House house = new House() {
+     @Override
+     public double buildingSurface(double surface) {
+         return 115;
+     }
+
+     @Override
+     public String adress(String adress1) {
+         return "Gdańsk";
+     }
+
+     @Override
+     public int windowsCount(int windows) {
+         return 15;
+     }
+
+     @Override
+     public int citizenCount(int citizen) {
+         return 1500;
+     }
+
+     @Override
+     public void houseColor(EnumColor color) {
+
+     }
+
+     @Override
+     public int roomsCount(int rooms, int bathrooms) {
+         return super.roomsCount(7,2) ;
+     }
+ } ;
+    House building = new House(){
+        @Override
+        public double buildingSurface(double surface) {
+            return 50;
+        }
+
+        @Override
+        public String adress(String adress1) {
+            return "Gdynia";
+        }
+
+        @Override
+        public int windowsCount(int windows) {
+            return 7;
+        }
+
+        @Override
+        public int citizenCount(int citizen) {
+            return 50;
+        }
+
+        @Override
+        public void houseColor(EnumColor color) {
+
+        }
+
+        @Override
+        public int roomsCount(int rooms, int bathrooms) {
+            return roomsCount(3,2) ;
+        }
+    };
+
 }
 enum EnumColor{
     White, Black, Red, Blue, Green
+
 }
