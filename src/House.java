@@ -1,2 +1,3 @@
-public class House {
+public class House implements Building {
+
 }
