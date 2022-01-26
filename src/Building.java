@@ -17,7 +17,8 @@ public interface Building {
     enum getHouseColor {}
 
     double priceCalculate(double surface, double price);
-    int setRoomsCount(int bedrooms, int bathrooms);
+
+    int roomsCount(int bedrooms, int bathrooms);
 
 }
 

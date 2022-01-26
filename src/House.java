@@ -17,7 +17,7 @@ abstract class House implements Building{
 
     @Override
     public double surface(double buildingSurface, double yardArea, double parkingSurface) {
-        return surface(55,15,10);
+        return surface;
     }
 
     @Override
@@ -30,8 +30,36 @@ abstract class House implements Building{
         this.windowsCount = windowsCount;
     }
 
-
+    @Override
+    public int getWindowsCount() {
+        return windowsCount;
     }
+
+    @Override
+    public void setCitizenCount(int citizenCount) {
+        this.citizenCount = citizenCount;
+    }
+
+    @Override
+    public int getCitizenCount() {
+        return citizenCount;
+    }
+
+    @Override
+    public void setHouseColor(EnumColor color) {
+    }
+
+    @Override
+    public double priceCalculate(double surface, double price) {
+        return 0;
+    }
+
+    @Override
+    public int roomsCount(int bedrooms, int bathrooms) {
+        return 0;
+    }
+}
+
 
 
 
