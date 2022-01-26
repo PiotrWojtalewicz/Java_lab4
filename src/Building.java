@@ -20,5 +20,7 @@ public interface Building {
 
     int roomsCount(int bedrooms, int bathrooms);
 
+    void priceApartment (int priceApartment);
+
 }
 
