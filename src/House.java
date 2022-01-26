@@ -24,7 +24,15 @@ abstract class House implements Building{
     public String adress(String locality, String street, String houseNumber, String apartmentNumber, String postcode) {
         return null;
     }
-}
+
+    @Override
+    public void setWindowsCount(int windowsCount) {
+        this.windowsCount = windowsCount;
+    }
+
+
+    }
+
 
 
 

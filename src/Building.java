@@ -1,4 +1,5 @@
 public interface Building {
+
     double surface(double buildingSurface, double yardArea, double parkingSurface);
 
     String adress(String locality, String street, String houseNumber, String apartmentNumber, String postcode);
