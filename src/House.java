@@ -58,6 +58,11 @@ abstract class House implements Building{
     public int roomsCount(int bedrooms, int bathrooms) {
         return 0;
     }
+
+    @Override
+    public void summary(int priceApartment) {
+
+    }
 }
 
 
