@@ -32,3 +32,6 @@ public class Main {
         */
     }
 }
+enum EnumColor{
+    White, Black, Red, Blue, Green
+}
