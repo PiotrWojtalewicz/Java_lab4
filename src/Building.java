@@ -1,7 +1,7 @@
 public interface Building {
     double surface(double buildingSurface, double yardArea, double parkingSurface);
 
-    String adress(String locality, String Street, String houseNumber, String apartmentNumber, int postcode);
+    String adress(String locality, String street, String houseNumber, String apartmentNumber, String postcode);
 
     void setWindowsCount(int windowsCount);
 
