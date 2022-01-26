@@ -51,7 +51,7 @@ abstract class House implements Building{
 
     @Override
     public double priceCalculate(double surface, double price) {
-        return 0;
+        return price;
     }
 
     @Override
