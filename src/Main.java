@@ -29,9 +29,23 @@ public class Main {
         c) wypisać metody toString() wszystkich objektów,
         */
 
-        Student student = new Student(){
-           student.SetIndex(00000)
-        };
+        Student student = new Student();
+        student.setIndex(000);
+
+        Student student1 = new Student();
+        student.setIndex(999);
+
+
+        Employee employee = new Employee();
+        employee.setBoss("Masłowski");
+
+        Employee employee1 = new Employee();
+        employee1.setBoss("Twardowski");
+
+        System.out.println(student.toString());
+        System.out.println(student1.toString());
+        System.out.println(employee.toString());
+        System.out.println(employee1.toString());
 
 
 
