@@ -62,7 +62,7 @@ abstract class House implements Building{
 
     @Override
     public void summary(int priceApartment) {
-        System.out.println("Mieszkanie które ma powierzchnie: " + surface +" ma: " + getWindowsCount() + "okien " + "w tym mieście przebywa: " + getCitizenCount()  );
+        System.out.println("Mieszkanie które ma powierzchnie: " + surface +" ma: " + getWindowsCount() + "okien " + "w tym mieście przebywa: " + getCitizenCount() + "koszytuje: " + price );
     }
 }
 

@@ -30,7 +30,9 @@ public class Main {
         d) sprawdzić czy idzie wywołać z obu instancji objektu (deklaracja z interfejsu i z klasy)
         metodę której nie ma zadeklarowane w interfejsie Budynek, ale jest dopisana w klassie Dom,
         */
+
     }
+
 }
 enum EnumColor{
     White, Black, Red, Blue, Green
