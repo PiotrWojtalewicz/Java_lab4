@@ -1,4 +1,4 @@
-public interface Person {
+public interface PersonI {
     String surname ();
     int age ();
 

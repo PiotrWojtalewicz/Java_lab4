@@ -1,4 +1,6 @@
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -27,6 +29,12 @@ public class Main {
         c) wypisać metody toString() wszystkich objektów,
         */
 
+        Student student = new Student(){
+            student.setIndex(92992)
+        };
+
+
+
         /* zad.4* - Dla chętnych (bez dodatkowych punktów),
         a) stworzyć klasę Kierownik która będzie implementować interfejs PracownikI,
         b) zaimplementować wszystkie metody, i stworzyć pola
@@ -43,4 +51,5 @@ public class Main {
         c) stworzyć pola w metodzie main() i wywołać metody
         */
     }
+
 }
