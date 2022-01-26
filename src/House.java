@@ -25,6 +25,6 @@ abstract class House implements Building{
         return null;
     }
 }
-}
+
 
 
