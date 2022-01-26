@@ -1,6 +1,7 @@
 public class Student implements StudentI {
 
     private int index;
+    private String surname;
 
     public Integer getIndex() {return index;}
     public void setIndex(int index) {
