@@ -49,6 +49,7 @@ abstract class House implements Building{
     public void setHouseColor(EnumColor color) {
     }
 
+
     @Override
     public double priceCalculate(double surface, double price) {
         return price;
@@ -61,7 +62,7 @@ abstract class House implements Building{
 
     @Override
     public void summary(int priceApartment) {
-        System.out.println("Mieszkanie które ma powierzchnie: " + surface +" ma: " + getWindowsCount() + "okien " );
+        System.out.println("Mieszkanie które ma powierzchnie: " + surface +" ma: " + getWindowsCount() + "okien " + "w tym mieście przebywa: " + getCitizenCount()  );
     }
 }
 
