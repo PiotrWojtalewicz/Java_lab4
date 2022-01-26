@@ -30,7 +30,7 @@ public class Main {
         */
 
         Student student = new Student(){
-            student.setIndex(92992)
+           student.SetIndex(00000)
         };
 
 

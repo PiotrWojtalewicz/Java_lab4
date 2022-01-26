@@ -2,14 +2,15 @@ public class Student implements StudentI {
 
     private int index;
 
+    public Integer getIndex() {return index;}
     public void setIndex(int index) {
         this.index = index;
     }
-    int getIndex;
+
 
     @Override
     public String surname() {
-        return "Białkowski" + index;
+        return "Białkowski" ;
     }
 
     @Override
