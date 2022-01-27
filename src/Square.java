@@ -1,10 +1,10 @@
 public class Square extends Figure {
 
-    int getField(int edge, int edg ){
-        return edge * edg;
+    int getField(int a, int b ){
+        return a * b;
     };
-    int getCircuit(int side, int flank, int bok, int krawedz ){
-        return side + flank + bok + krawedz   ;
+    int getCircuit(int c, int d, int e, int f ){
+        return c + d + e + f   ;
     }
 
     @Override
