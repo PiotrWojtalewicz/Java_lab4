@@ -1,7 +1,7 @@
 import org.w3c.dom.ls.LSOutput;
 
 public class Main {
-    public static void main(String[] args) {
+
 
         /* zad.1
         a) Stwożyć interfejs Budynek,
@@ -32,27 +32,28 @@ public class Main {
         d) sprawdzić czy idzie wywołać z obu instancji objektu (deklaracja z interfejsu i z klasy)
         metodę której nie ma zadeklarowane w interfejsie Budynek, ale jest dopisana w klassie Dom,
         */
-    }
 
+
+    public static void main(String[] args){
  House house = new House() {
      @Override
      public double buildingSurface(double surface) {
-         return 115;
+         return 0;
      }
 
      @Override
      public String adress(String adress1) {
-         return "Gdańsk";
+         return null;
      }
 
      @Override
      public int windowsCount(int windows) {
-         return 15;
+         return 0;
      }
 
      @Override
      public int citizenCount(int citizen) {
-         return 1500;
+         return 0;
      }
 
      @Override
@@ -65,6 +66,7 @@ public class Main {
          return super.roomsCount(7,2) ;
      }
  } ;
+        System.out.println("House surface(in m^2): " + house.buildingSurface(122) + "\nAdress: " + house.adress("Gdańsk") + "\n Windows count: " + house.windowsCount(15) + "\nCitizen in the town: " + house.citizenCount(500));
     House building = new House(){
         @Override
         public double buildingSurface(double surface) {
@@ -96,8 +98,7 @@ public class Main {
             return roomsCount(3,2) ;
         }
     };
-
-}
+}}
 enum EnumColor{
     White, Black, Red, Blue, Green
 
