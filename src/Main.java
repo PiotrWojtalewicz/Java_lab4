@@ -13,6 +13,12 @@ public class Main {
         b) zaimplementować metody abstrakcyjne odpowiednimi wzorami,
         c) stworzyć objekty tych klas i wyświetlić przykładowe wyliczenia
         */
+Square square = new Square();
+square.getCircuit(2,2,2,2);
+        System.out.println(square);
 
+
+square.getField(2,2);
+        System.out.println(square);
     }
 }
