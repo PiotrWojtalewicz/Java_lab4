@@ -2,12 +2,15 @@ public class Student implements StudentI {
 
     private int index;
     private String surname;
+    private double averageGrade;
 
     public Integer getIndex() {return index;}
     public void setIndex(int index) {
         this.index = index;
     }
 
+    public double getAverageGrade() {return averageGrade;}
+    public void setAverageGrade(double averageGrade) { this.averageGrade= averageGrade;}
 
     @Override
     public String surname() {
@@ -30,7 +33,7 @@ public class Student implements StudentI {
     }
 
     @Override
-    public double averageGrade() {
-        return 3.76;
+    public String library() {
+        return " Miejska bilioteka - Gdańsk ";
     }
 }

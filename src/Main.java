@@ -30,10 +30,15 @@ public class Main {
         */
 
         Student student = new Student();
-        student.setIndex(000);
+        student.setIndex(21);
+        student.setAverageGrade(3.66);
+
+
+
 
         Student student1 = new Student();
-        student.setIndex(999);
+        student1.setIndex(999);
+        student1.setAverageGrade(4.67);
 
 
         Employee employee = new Employee();
@@ -42,10 +47,10 @@ public class Main {
         Employee employee1 = new Employee();
         employee1.setBoss("Twardowski");
 
-        System.out.println(student.toString());
-        System.out.println(student1.toString());
-        System.out.println(employee.toString());
-        System.out.println(employee1.toString());
+        System.out.println("Surname of student: "+ student.surname() + "\n Index of student: " + student.getIndex() + "\n Age of student: " + student.age() + " \n Department of student: " + student.department() + "\n Field of Study: " + student.fieldOfStudy() + "\n Average grade of student: " + student.getAverageGrade() + "\n Library: " + student.library());
+        System.out.println( student1.surname() + " " + student1.getIndex() + " " + student1.age() + " " + student1.department() + " " + student1.fieldOfStudy() + " " + student1.getAverageGrade() + " " + student1.library() );
+        System.out.println("My surname is: "+ employee.surname() + "\n My position is: " + employee.position() + "\n I work: " + employee.hoursCount() + " hours per month." + "\n My income per month: " + employee.income() + "\n My boss is: " + employee.getBoss() );
+        System.out.println(employee1.getBoss());
 
 
 
