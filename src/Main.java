@@ -34,71 +34,16 @@ public class Main {
         */
 
 
-    public static void main(String[] args){
- House house = new House() {
-     @Override
-     public double buildingSurface(double surface) {
-         return 0;
-     }
+    public static void main(String[] args) {
 
-     @Override
-     public String adress(String adress1) {
-         return null;
-     }
 
-     @Override
-     public int windowsCount(int windows) {
-         return 0;
-     }
+        House house = new House();
 
-     @Override
-     public int citizenCount(int citizen) {
-         return 0;
-     }
 
-     @Override
-     public void houseColor(EnumColor color) {
-
-     }
-
-     @Override
-     public int roomsCount(int rooms, int bathrooms) {
-         return super.roomsCount(7,2) ;
-     }
- } ;
-        System.out.println("House surface(in m^2): " + house.buildingSurface(122) + "\nAdress: " + house.adress("Gdańsk") + "\n Windows count: " + house.windowsCount(15) + "\nCitizen in the town: " + house.citizenCount(500));
-    House building = new House(){
-        @Override
-        public double buildingSurface(double surface) {
-            return 50;
-        }
-
-        @Override
-        public String adress(String adress1) {
-            return "Gdynia";
-        }
-
-        @Override
-        public int windowsCount(int windows) {
-            return 7;
-        }
-
-        @Override
-        public int citizenCount(int citizen) {
-            return 50;
-        }
-
-        @Override
-        public void houseColor(EnumColor color) {
-
-        }
-
-        @Override
-        public int roomsCount(int rooms, int bathrooms) {
-            return roomsCount(3,2) ;
-        }
-    };
-}}
+        System.out.println("House surface(in m^2): " + house.buildingSurface(122.7) + "\nAdress: " + house.adress("Gdańsk") + "\n Windows count: " + house.windowsCount(15) + "\nCitizen in the town: " + house.citizenCount(500) + "\n Count of bedrooms and bathrooms: " + house.roomsCount(4,2));
+        House building = new House();
+        System.out.println(building.buildingSurface(55.5) + " " + building.adress("Gdynia") + " " + house.windowsCount(6) + " " + house.citizenCount(100) + " " + building.roomsCount(2,1) );
+    }}
 enum EnumColor{
     White, Black, Red, Blue, Green
 

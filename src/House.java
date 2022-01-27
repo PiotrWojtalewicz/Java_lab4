@@ -1,5 +1,5 @@
 
-abstract class House implements Building{
+public class House implements Building{
  private double surface;
  private String adress;
  private int windows;
