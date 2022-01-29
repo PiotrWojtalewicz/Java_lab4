@@ -1,7 +1,40 @@
-
+import java.sql.SQLOutput;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int x;
+        int[] tab =new int[6];
+        for (int i = 0; i==5; i++){
+            tab[i] = i+1;
+        }
+        try{
+
+            System.out.println("Podaj numer indeksu tablicy od 0-5 : ");
+            x = scan.nextInt();
+            for (x: tab) {
+                System.out.println(x);
+            }
+
+        }
+
+        catch (InputMismatchException e ){
+            System.out.println("Wpisz liczby całkowite łosiu");
+         }
+        catch (ArrayIndexOutOfBoundsException e ) {
+            System.out.println("Wpisz liczbę od 1-6");
+        }
+
+        finally {
+            System.out.println("Udało się zakończyć program");
+        }
+
+
+
+
+
 
         /* zad.1
         a) stworzyć tablicę 6-cio elementową, uzupełnić przykładowymi wartościami (dowolny typ tablicy),
@@ -20,6 +53,8 @@ public class Main {
            boolean isIndexCorrect
            white(!isIndexCorrect) {}
         */
+    }
+
 
 
         /* zad.2
@@ -29,4 +64,4 @@ public class Main {
          */
 
     }
-}
+
