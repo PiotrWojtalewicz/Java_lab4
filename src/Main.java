@@ -4,32 +4,19 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
+        int tab[] = {1,2,3,4,5,6};
+        System.out.println("Podaj numer indeksu z zakresu 1-6");
         Scanner scan = new Scanner(System.in);
-        int x;
-        int[] tab =new int[6];
-        for (int i = 0; i==5; i++){
-            tab[i] = i+1;
-        }
-        try{
-
-            System.out.println("Podaj numer indeksu tablicy od 0-5 : ");
-            x = scan.nextInt();
-            for (x: tab) {
-                System.out.println(x);
+        int x = scan.nextInt();
+        if(x>= 6 || x< 0){
+            try {
+                System.out.println(tab[x]);
             }
-
-        }
-
-        catch (InputMismatchException e ){
-            System.out.println("Wpisz liczby całkowite łosiu");
-         }
-        catch (ArrayIndexOutOfBoundsException e ) {
-            System.out.println("Wpisz liczbę od 1-6");
-        }
-
-        finally {
-            System.out.println("Udało się zakończyć program");
-        }
+            catch
+            (ArrayIndexOutOfBoundsException e){
+            System.out.println("Podaj liczbę od 1-6!!!!!!");
+        }}
 
 
 
