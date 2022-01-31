@@ -16,7 +16,19 @@ public class Main {
             catch
             (ArrayIndexOutOfBoundsException e){
             System.out.println("Podaj liczbę od 1-6!!!!!!");
-        }}
+                throw e;
+        }
+        try {
+            x= Integer.parseInt(scan.next());
+        }
+        catch (NumberFormatException e){
+            System.out.println("Wprowadź liczbę całkowitą od 1-6!!!");
+            throw e;
+        }
+        finally{
+            System.out.println("zakończenie programu");
+        }
+        }
 
 
 
